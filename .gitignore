@@ -1,0 +1,47 @@
+# --- datos pesados: no se versionan ---
+datos/*.csv
+datos/*.parquet
+datos/completo/
+datos/intermedios/
+!datos/muestra/
+!datos/muestra/*
+
+# --- resultados generados ---
+resultados/figuras/*.png
+resultados/tablas/*.csv
+resultados/*.json
+
+# --- artefactos de modelo ---
+*.joblib
+!modelos/.gitkeep
+
+# --- entorno ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# --- cuadernos ---
+.ipynb_checkpoints/
+
+# --- Power BI ---
+*.pbix.bak
+
+# --- sistema operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- editores ---
+.vscode/
+.idea/
+*.swp
+
+# --- Word ---
+~$*.docx
+
+# --- gestión interna del equipo, no forma parte del prototipo ---
+PENDIENTE.md

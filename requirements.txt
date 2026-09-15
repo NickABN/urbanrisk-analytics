@@ -1,0 +1,36 @@
+# UrbanRisk Analytics — entorno de ejecución
+# Python 3.11+ (verificado con 3.12.4)
+#
+# Las versiones están fijadas a propósito: el prototipo debe producir
+# los mismos resultados hoy y dentro de un año.
+#
+# Verificado: `pip install -r requirements.txt` instala estas versiones
+# exactas sin conflictos sobre Python 3.12.4 sin necesidad de ajustes.
+# Para fijar también las dependencias transitivas, usar requirements.lock.txt.
+
+# --- núcleo de datos ---
+pandas==2.2.3
+numpy==1.26.4
+pyarrow==17.0.0
+scipy==1.14.1
+
+# --- modelado ---
+scikit-learn==1.5.2
+xgboost==2.1.1
+lightgbm==4.5.0
+statsmodels==0.14.4
+
+# --- interpretabilidad ---
+shap==0.46.0
+
+# --- visualización ---
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# --- cuadernos ---
+jupyterlab==4.2.5
+nbformat==5.10.4
+ipykernel==6.29.5
+
+# --- generación de documentos ---
+python-docx==1.1.2
