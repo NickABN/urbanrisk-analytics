@@ -56,16 +56,16 @@ pip install -r requirements.txt
 
 El conjunto completo (~104 MB) **no se versiona en este repositorio**. Procede del portal de datos abiertos de la Ciudad de México y su origen está documentado en [`datos/README.md`](datos/README.md).
 
-El repositorio incluye una **muestra reproducible** en `datos/muestra/` que permite ejecutar el flujo completo de principio a fin. Produce resultados cualitativamente equivalentes, aunque con cifras distintas a las del documento.
+**El flujo requiere el CSV completo.** Una muestra reducida y versionada, que permitiría ejecutarlo sin descargar los 104 MB, está en preparación y aún no forma parte del repositorio.
 
-Para reproducir las cifras exactas del TFM, coloca el CSV completo y apunta la variable de entorno:
+Coloca el CSV y apunta la variable de entorno:
 
 ```bash
 set RUTA_CSV=C:\ruta\a\inViales_2022_2024.csv     # Windows
 export RUTA_CSV=/ruta/a/inViales_2022_2024.csv    # Linux / macOS
 ```
 
-Si no se define, los módulos buscan `datos/muestra/inViales_muestra.csv`.
+Si no se define, los módulos buscan `datos/muestra/inViales_muestra.csv`, que es donde vivirá la muestra cuando esté disponible.
 
 ### Ejecución
 

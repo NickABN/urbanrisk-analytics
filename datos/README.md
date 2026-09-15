@@ -21,11 +21,11 @@ export RUTA_CSV=/ruta/a/inViales_2022_2024.csv    # Linux / macOS
 
 Si la variable no está definida, los módulos usan `datos/muestra/inViales_muestra.csv`.
 
-## La muestra
+## La muestra — en preparación
 
-`muestra/inViales_muestra.csv` contiene un subconjunto estratificado por alcaldía, año y franja horaria. Permite ejecutar el flujo completo de principio a fin sin descargar los 104 MB.
+`muestra/inViales_muestra.csv` **todavía no forma parte del repositorio.** Por ahora el flujo requiere el CSV completo, apuntado mediante `RUTA_CSV`.
 
-**Las cifras que produce no coinciden con las del documento del TFM.** Sirve para verificar que el código corre y que la lógica es la descrita, no para reproducir los resultados exactos.
+Cuando esté disponible será un subconjunto estratificado por alcaldía, año y franja horaria, de unos 5 MB, con semilla fija. Su propósito será permitir que el flujo se ejecute de principio a fin sin descargar los 104 MB. **Las cifras que produzca no coincidirán con las del documento del TFM:** servirá para verificar que el código corre y que la lógica es la descrita, no para reproducir los resultados exactos.
 
 ## Campos utilizados
 
